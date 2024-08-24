@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard - Course & Personal Information</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-header ">
+          <h4>Course & Personal Information</h4>
+        </div>
+        <div class="card-body">
+          <form id="infoForm" class="needs-validation p-3" novalidate>
+            
+            <!-- Type of Course -->
+            <div class="mb-3 row">
+              <label for="courseType" class="col-sm-5 col-form-label ">Type of Course</label>
+              <div class="col-sm-7">
+              <select class="form-select" id="courseType" required>
+                <option value="" disabled selected>Select Course Type</option>
+                <option value="Undergraduate">Undergraduate</option>
+                <option value="Postgraduate">Postgraduate</option>
+                <option value="Diploma">Diploma</option>
+              </select>
+            
+              <div class="invalid-feedback">
+                Please select a course type.
+              </div>
+            </div>
+        </div>
+
+            <!-- Name of Course -->
+            <div class="mb-3 row">
+              <label for="courseName" class="col-sm-5 col-form-label ">Name of Course</label>
+              <div class="col-sm-7">
+              <input type="text" class="form-control" id="courseName" required>
+              <div class="invalid-feedback">
+                Please enter the name of the course.
+              </div>
+            </div>
+        </div>
+
+            <!-- Name of the College -->
+            <div class="mb-3 row">
+              <label for="collegeName" class="col-sm-5 col-form-label">Name of the College</label>
+              <div class="col-sm-7">
+              <input type="text" class="form-control" id="collegeName" required>
+              <div class="invalid-feedback">
+                Please enter the name of the college.
+              </div>
+            </div>
+        </div>
+
+            <!-- Course Registration No. -->
+            <div class="mb-3 row">
+              <label for="courseRegNo" class="col-sm-5 col-form-label">Course Registration No.</label>
+              <div class="col-sm-7">
+              <input type="text" class="form-control" id="courseRegNo" required>
+              <div class="invalid-feedback">
+                Please enter your course registration number.
+              </div>
+            </div>
+        </div>
+
+            <!-- Name -->
+            <div class="mb-3 row">
+              <label for="studentName" class="col-sm-5 col-form-label">Name</label>
+              <div class="col-sm-7">
+              <input type="text" class="form-control" id="studentName" required>
+              <div class="invalid-feedback">
+                Please enter your name.
+              </div>
+            </div>
+        </div>
+
+            <!-- Father's Name -->
+            <div class="mb-3 row">
+              <label for="fatherName" class="col-sm-5 col-form-label">Father's Name</label>
+              <div class="col-sm-7">
+              <input type="text" class="form-control" id="fatherName" required>
+              <div class="invalid-feedback">
+                Please enter your father's name.
+              </div>
+            </div>
+        </div>
+    
+    <!-- Gender -->
+    <div class="mb-3 row">
+      <label class="form-label col-sm-5">Gender</label>
+      <div class=" col-sm-5 d-flex justify-content-between">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" id="male" name="gender" value="Male" required>
+          <label class="form-check-label" for="male">Male</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" id="female" name="gender" value="Female" required>
+          <label class="form-check-label" for="female">Female</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" id="other" name="gender" value="Other" required>
+          <label class="form-check-label" for="other">Other</label>
+        </div>
+      </div>
+      <div class="invalid-feedback">
+        Please select your gender.
+      </div>
+    </div>
+
+    <!--  Category (General/ST/SC/OBC) -->
+    <div class="mb-3 row">
+      <label class="form-label col-sm-5">Category</label>
+      <div class=" col-sm-7 d-flex justify-content-between">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" id="general" name="category" value="General" required>
+          <label class="form-check-label" for="general">General</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" id="st" name="category" value="ST" required>
+          <label class="form-check-label" for="st">ST</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" id="sc" name="category" value="SC" required>
+          <label class="form-check-label" for="sc">SC</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" id="obc" name="category" value="OBC" required>
+          <label class="form-check-label" for="obc">OBC</label>
+        </div>
+      </div>
+      <div class="invalid-feedback">
+        Please select your category.
+      </div>
+    </div>
+
+  
+
+
+            <!-- Address for Correspondence -->
+            <div class="mb-3 row">
+              <label for="address" class="col-sm-5 col-form-label">Address for Correspondence</label>
+              <div class="col-sm-7">
+              <textarea class="form-control" id="address" rows="3" required></textarea>
+              <div class="invalid-feedback">
+                Please enter your address.
+              </div>
+            </div>
+        </div>
+
+            <!-- State -->
+            <div class="mb-3 row">
+              <label for="state" class="col-sm-5 col-form-label">State</label>
+              <div class="col-sm-7">
+              <input type="text" class="form-control" id="state" required>
+              <div class="invalid-feedback">
+                Please enter your state.
+              </div>
+            </div>
+        </div>
+
+            <!-- Country -->
+            <div class="mb-3 row">
+              <label for="country" class="col-sm-5 col-form-label">Country</label>
+              <div class="col-sm-7">
+              <input type="text" class="form-control" id="country" required>
+              <div class="invalid-feedback">
+                Please enter your country.
+              </div>
+            </div>
+        </div>
+
+            <!-- Mobile No. -->
+            <div class="mb-3 row">
+              <label for="mobileNo" class="col-sm-5 col-form-label">Mobile No.</label>
+              <div class="col-sm-7">
+              <input type="tel" class="form-control" id="mobileNo" required pattern="\d{10}">
+              <div class="invalid-feedback">
+                Please enter a valid 10-digit mobile number.
+              </div>
+            </div>
+        </div>
+
+            <!-- Alternate Mobile No. -->
+            <div class="mb-3 row">
+              <label for="altMobileNo" class="col-sm-5 col-form-label">Alternate Mobile No.</label>
+              <div class="col-sm-7">
+              <input type="tel" class="form-control" id="altMobileNo" pattern="\d{10}">
+            </div>
+        </div>
+
+            <!-- WhatsApp -->
+            <div class="mb-3 row">
+              <label for="whatsapp" class="col-sm-5 col-form-label">WhatsApp</label>
+              <div class="col-sm-7">
+              <input type="tel" class="form-control" id="whatsapp" required pattern="\d{10}">
+              <div class="invalid-feedback">
+                Please enter a valid 10-digit WhatsApp number.
+              </div>
+            </div>
+        </div>
+
+            <!-- E-mail ID -->
+            <div class="mb-3 row">
+              <label for="email" class="col-sm-5 col-form-label">E-mail ID</label>
+              <div class="col-sm-7">
+              <input type="email" class="form-control" id="email" required>
+              <div class="invalid-feedback">
+                Please enter a valid email address.
+              </div>
+            </div>
+        </div>
+
+            <!-- Aadhaar -->
+            <div class="mb-3 row">
+              <label for="aadhaar" class="col-sm-5 col-form-label">Aadhaar</label>
+              <div class="col-sm-7">
+              <input type="text" class="form-control" id="aadhaar" required>
+              <div class="invalid-feedback">
+                Please enter your Aadhaar number.
+              </div>
+            </div>
+        </div>
+
+            <!-- Submit Button -->
+            
+            <div class="d-flex justify-content-between mt-4">
+                <a href="payment.html">
+                <button type="button" class="btn btn-secondary">Back</button>
+                </a>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+<script>
+  // JavaScript for form validation and redirection
+  (function () {
+    'use strict';
+    const form = document.getElementById('infoForm');
+
+    form.addEventListener('submit', function (event) {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      } else {
+        // If the form is valid, redirect to personalInfo.html page
+        event.preventDefault(); // Prevent default form submission
+        alert('Personal info submit successful!');
+        window.location.href = 'preview.html'; // Redirect to the personalInfo page
+      }
+
+      form.classList.add('was-validated');
+    });
+  })();
+</script>
+
+</body>
+</html>
